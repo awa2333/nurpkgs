@@ -5,7 +5,7 @@
   stdenvNoCC,
 }:
 stdenvNoCC.mkDerivation rec {
-  name = "fcitx5-flypy-${version}";
+  name = "fcitx5-flypy";
   version = "20240827";
   src = fetchFromGitHub {
     owner = "cubercsl";
@@ -30,5 +30,6 @@ stdenvNoCC.mkDerivation rec {
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ yaoheng ];
     license = lib.licenses.unfree;
+    sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 }
