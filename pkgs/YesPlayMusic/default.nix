@@ -21,6 +21,5 @@ appimageTools.wrapType2 rec {
     mainProgram = "YesPlayMusic";
     platforms = lib.platforms.linux;
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
-    maintainers = with lib.maintainers; [ yaoheng ];
   };
 }
